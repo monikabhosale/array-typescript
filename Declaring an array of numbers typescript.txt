@@ -1,0 +1,50 @@
+1. Declaring an array of numbers:
+let a: number[] = [10, 20, 30];
+
+let a: number[]: This declares a variable a that is an array of numbers.
+
+
+[10, 20, 30]: This initializes the array with the numbers 10, 20, and 30.
+
+2.Declaring an array of numbers without an explicit type:
+
+let a1 = [45, 63, 10];
+let a1: This declares a variable a1.
+
+
+= [45, 63, 10]: 
+This initializes a1 with the numbers 45, 63, and 10. 
+TypeScript infers the type of a1 as number[] because it is initialized with numbers.
+
+3. Declaring an array with any type:
+let a2: any[] = [];
+
+let a2: any[]: This declares a variable a2 that is an array which can hold any type of elements.
+
+= []: This initializes a2 as an empty array.
+
+4. Declaring an array with mixed types:
+let a3 = [2.5, 'monika'];
+let a3: This declares a variable a3.
+= [2.5, 'monika']: This initializes a3 with the values 2.5 (a number) and 'sumit' (a string). TypeScript infers the type of a3 as (number | string)[] because it is initialized with both a number and a string.
+
+5. Adding an element to a mixed type array:
+a3[3] = 56;
+
+a3[3]: This accesses the fourth element of the array a3 (index 3, since arrays are zero-indexed).
+= 56: This sets the fourth element to the number 56. After this line, the array a3 will look like this: 
+[2.5, 'sumit', undefined, 56].
+
+
+The complete TypeScript code with comments:
+
+let a: number[] = [10, 20, 30]; // Declares an array of numbers
+let a1 = [45, 63, 10]; // Declares and initializes an array of numbers, TypeScript infers number[]
+let a2: any[] = []; // Declares an array that can hold any type of elements and initializes it as empty
+let a3 = [2.5, 'sumit']; // Declares and initializes an array with a number and a string, TypeScript infers (number | string)[]
+
+a3[3] = 56; // Adds the number 56 at index 3 of the array a3
+
+
+
+
